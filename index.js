@@ -60,7 +60,7 @@ async function run() {
       res.send(result)
     })
 
-    //get product
+    
     app.get("/latest_learning",async(req,res)=>{
       const cursor= learningCollection.find().limit(8)
       const result = await cursor.toArray()
