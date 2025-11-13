@@ -94,7 +94,7 @@ async function run() {
 
     });
     
-    //update product
+    
     app.patch("/learning/:id",async(req,res)=>{
       const id=req.params.id;
       const updateCourse=req.body;
@@ -114,7 +114,7 @@ async function run() {
       res.send(result);
     });
 
-    //delete product
+   
     app.delete("/learning/:id",async(req,res)=>{
       const id=req.params.id;
     
