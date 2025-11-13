@@ -86,7 +86,7 @@ async function run() {
        res.send(result)
     })
 
-    //post courses
+    
     app.post("/learning", async(req, res) => {
       const newCourse = req.body;
       const result = await learningCollection.insertOne(newCourse);
