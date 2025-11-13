@@ -74,7 +74,7 @@ async function run() {
       res.send(result)
     })
 
-    //enroll
+   
     app.post("/enroll",async(req,res)=>{
       const enrollCourse=req.body
       const result =await enrollCourseCollection.insertOne( enrollCourse)
