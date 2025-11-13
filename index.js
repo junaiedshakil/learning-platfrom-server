@@ -53,7 +53,7 @@ async function run() {
       const course=await learningCollection.findOne(query)
       res.send(course)
     })
-    //user post
+    
     app.post("/user",async(req,res)=>{
       const newUser=req.body;
       const result = await userCollection.insertOne(newUser);
